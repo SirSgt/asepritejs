@@ -1,0 +1,10 @@
+@import "./variables";
+
+.toolbar {
+  height: 2 * 1.4375rem;
+  background-color: $gray_blue;
+  border-top: 2px solid $black;
+  //   box-shadow: inset 0 0 -0 2px $light_gray_blue;
+
+  box-shadow: inset 0 2px 0 0 $light_gray_blue;
+}

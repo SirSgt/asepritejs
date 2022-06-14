@@ -1,0 +1,34 @@
+$header_color: #d3cbbe;
+$link_hover_color: #ffebb6;
+
+.nav {
+  background-color: $header_color;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    line-height: 1;
+  }
+
+  list-style: none;
+}
+
+.link {
+  font-size: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding: 10px;
+
+  &::first-letter {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    background: $link_hover_color;
+  }
+}

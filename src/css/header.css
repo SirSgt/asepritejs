@@ -1,0 +1,39 @@
+.nav {
+  background-color: #d3cbbe;
+  height: 2.875rem;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.links li {
+  line-height: 0.5;
+}
+
+.link {
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding: 0.6rem;
+}
+
+.link::first-letter {
+  text-decoration: underline;
+}
+
+.link:hover {
+  background: #ffebb6;
+}
+
+@media (max-width: 106em) {
+  .link {
+    font-size: 0.5rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */

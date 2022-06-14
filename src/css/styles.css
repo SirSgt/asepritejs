@@ -1,0 +1,31 @@
+.nav {
+  background-color: #d3cbbe;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.links li {
+  line-height: 1;
+}
+
+.link {
+  font-size: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding: 10px;
+}
+
+.link::first-letter {
+  text-decoration: underline;
+}
+
+.link:hover {
+  background: #ffebb6;
+}
+/*# sourceMappingURL=styles.css.map */
