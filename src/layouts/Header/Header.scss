@@ -1,12 +1,12 @@
-@import "../styles/variables";
-@import "../styles/mixins";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .nav {
   background-color: $header_color;
-  height: 2 * 1.4375rem;
+  // height: 2 * 1.4375rem;
 }
 
-.links {
+.menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -59,13 +59,17 @@
   }
 }
 
-.dropdown_menu {
+.menu_item {
   position: relative;
   display: inline-block;
 
   &:hover .dropdown_content {
     display: block;
   }
+}
+
+.show {
+  display: block;
 }
 
 @media (max-width: 106em) {

@@ -1,6 +1,6 @@
 // import "./App.css";
-import Header from "./layouts/Header";
-import Sidebar from "./layouts/Sidebar";
+import Header from "./layouts/Header/Header";
+// import Sidebar from "./layouts/Sidebar";
 import Toolbar from "./layouts/Toolbar";
 import "./styles/index.scss";
 

@@ -1,11 +1,15 @@
 import React from "react";
 import "./Header.scss";
+
+import Navbar from "./Navbar";
 // import "../css/header.css";
 
 const Header = () => {
   return (
-    <nav className="nav">
-      <ul className="links">
+    <div>
+      <Navbar/>
+      {/* <nav className="nav">
+      <ul className="menu">
         <li className="dropdown_menu">
           <button className="dropdown_btn">File</button>
           <div class="dropdown_content">
@@ -14,8 +18,13 @@ const Header = () => {
             <a href="/#">Link 3</a>
           </div>
         </li>
-        <li>
+        <li className="dropdown_menu">
           <button className="dropdown_btn">Edit</button>
+          <div class="dropdown_content">
+            <a href="/#">Link 1</a>
+            <a href="/#">Link 2</a>
+            <a href="/#">Link 3</a>
+          </div>
         </li>
         <li>
           <button className="dropdown_btn">Sprite</button>
@@ -32,11 +41,17 @@ const Header = () => {
         <li>
           <button className="dropdown_btn">View</button>
         </li>
-        <li>
+        <li className="dropdown_menu">
           <button className="dropdown_btn">Help</button>
+          <div class="dropdown_content">
+            <a href="/#">Link 1</a>
+            <a href="/#">Link 2</a>
+            <a href="/#">Link 3</a>
+          </div>
         </li>
       </ul>
-    </nav>
+    </nav> */}
+    </div>
   );
 };
 
