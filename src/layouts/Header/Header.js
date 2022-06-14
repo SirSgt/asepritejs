@@ -6,8 +6,9 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div>
-      <Navbar/>
+    <div className="header">
+      <Navbar />
+      <div className="tags"></div>
       {/* <nav className="nav">
       <ul className="menu">
         <li className="dropdown_menu">

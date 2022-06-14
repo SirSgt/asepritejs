@@ -1,8 +1,17 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.nav {
+.header {
   background-color: $header_color;
+
+  .tags {
+    height: 1.4375rem;
+    // background-color: pink;
+    // line-height: 1;
+  }
+}
+
+.nav {
   // height: 2 * 1.4375rem;
 
   .menu {
@@ -16,9 +25,9 @@
       display: inline-block;
       line-height: 0.5;
 
-      &:hover .dropdown_content {
-        display: block;
-      }
+      // &:hover .dropdown_content {
+      //   display: block;
+      // }
     }
 
     .dropdown_btn {
@@ -40,8 +49,12 @@
       }
     }
 
+    .clicked {
+      background: $toolbar_color;
+    }
+
     .dropdown_content {
-      // display: none;
+      display: none;
       position: absolute;
       min-width: 15rem;
 
@@ -51,17 +64,23 @@
 
       @include box_shadow;
 
-      a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        font-size: 0.6rem;
+      li {
+        a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          font-size: 0.6rem;
 
-        &:hover {
-          background-color: $toolbar_color;
+          &:hover {
+            background-color: $toolbar_color;
+          }
         }
       }
+    }
+
+    .show {
+      display: block;
     }
   }
 }
