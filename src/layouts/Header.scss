@@ -1,4 +1,5 @@
 @import "../styles/variables";
+@import "../styles/mixins";
 
 .nav {
   background-color: $header_color;
@@ -16,12 +17,13 @@
   }
 }
 
-.link {
+.dropdown_btn {
+  @include reset_btn;
+  font-family: pixelFont;
+
   font-size: 0.6rem;
   font-weight: 400;
-  text-decoration: none;
   color: $black;
-  display: inline-block;
   padding: 0.6rem;
 
   &::first-letter {
@@ -31,6 +33,38 @@
 
   &:hover {
     background: $link_hover_color;
+  }
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  min-width: 15rem;
+
+  z-index: 1;
+  padding: 0.375rem;
+
+  @include box_shadow;
+
+  a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.6rem;
+
+    &:hover {
+      background-color: $toolbar_color;
+    }
+  }
+}
+
+.dropdown_menu {
+  position: relative;
+  display: inline-block;
+
+  &:hover .dropdown_content {
+    display: block;
   }
 }
 

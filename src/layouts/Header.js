@@ -6,45 +6,34 @@ const Header = () => {
   return (
     <nav className="nav">
       <ul className="links">
-        <li>
-          <a href="/#" className="link">
-            File
-          </a>
+        <li className="dropdown_menu">
+          <button className="dropdown_btn">File</button>
+          <div class="dropdown_content">
+            <a href="/#">Link 1</a>
+            <a href="/#">Link 2</a>
+            <a href="/#">Link 3</a>
+          </div>
         </li>
         <li>
-          <a href="/#" className="link">
-            Edit
-          </a>
+          <button className="dropdown_btn">Edit</button>
         </li>
         <li>
-          <a href="/#" className="link">
-            Sprite
-          </a>
+          <button className="dropdown_btn">Sprite</button>
         </li>
         <li>
-          <a href="/#" className="link">
-            Layer
-          </a>
+          <button className="dropdown_btn">Layer</button>
         </li>
         <li>
-          <a href="/#" className="link">
-            Frame
-          </a>
+          <button className="dropdown_btn">Frame</button>
         </li>
         <li>
-          <a href="/#" className="link">
-            Select
-          </a>
+          <button className="dropdown_btn">Select</button>
         </li>
         <li>
-          <a href="/#" className="link">
-            View
-          </a>
+          <button className="dropdown_btn">View</button>
         </li>
         <li>
-          <a href="/#" className="link">
-            Help
-          </a>
+          <button className="dropdown_btn">Help</button>
         </li>
       </ul>
     </nav>
