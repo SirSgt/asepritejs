@@ -1,34 +1,41 @@
-$header_color: #d3cbbe;
-$link_hover_color: #ffebb6;
+@import "../styles/variables";
 
 .nav {
   background-color: $header_color;
+  height: 2 * 1.4375rem;
 }
 
 .links {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  list-style: none;
 
   li {
-    line-height: 1;
+    line-height: 0.5;
   }
-
-  list-style: none;
 }
 
 .link {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 400;
   text-decoration: none;
-  color: #000;
+  color: $black;
   display: inline-block;
-  padding: 10px;
+  padding: 0.6rem;
 
   &::first-letter {
     text-decoration: underline;
+    // box-shadow: inset 0 -1.5px 0 #000;
   }
 
   &:hover {
     background: $link_hover_color;
+  }
+}
+
+@media (max-width: 106em) {
+  .link {
+    font-size: 0.5rem;
   }
 }

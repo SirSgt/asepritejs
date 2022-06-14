@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(../resources/pointers/cursor.png), auto;
+}
+
+@font-face {
+  font-family: "pixelFont";
+  src: local("pixelFont"), url(../resources/fonts/Pixeled.woff) format("woff");
+}
+
+body {
+  font-family: pixelFont;
+}
