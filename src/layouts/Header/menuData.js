@@ -3,10 +3,12 @@ export const menuItems = [
     title: "File",
     submenu: [
       {
-        title: "New",
+        title: "New...",
+        mnemonic: "Ctrl+N",
       },
       {
-        title: "Open",
+        title: "Open...",
+        mnemonic: "Ctrl+O",
       },
       {
         title: "Open Recent",

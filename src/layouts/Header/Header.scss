@@ -54,6 +54,8 @@
     }
 
     .dropdown_content {
+      @include box_shadow;
+
       display: none;
       position: absolute;
       min-width: 15rem;
@@ -62,19 +64,19 @@
       padding: 0.375rem;
       list-style: none;
 
-      @include box_shadow;
-
       li {
+        display: flex;
+        justify-content: space-between;
+
         a {
           color: black;
           padding: 12px 16px;
           text-decoration: none;
           display: block;
           font-size: 0.6rem;
-
-          &:hover {
-            background-color: $toolbar_color;
-          }
+        }
+        &:hover {
+          background-color: $toolbar_color;
         }
       }
     }
