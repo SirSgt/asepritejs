@@ -1,3 +1,5 @@
+@import "../styles/variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +14,22 @@
 
 body {
   font-family: pixelFont;
+}
+
+.app {
+  height: 100vh;
+  background: $toolbar_color;
+}
+
+.grid_layout {
+  display: grid;
+  grid-template-columns: 2fr 20fr 0.5fr;
+}
+
+.box1 {
+  background: $bg_color;
+}
+
+.box2 {
+  background: greenyellow;
 }

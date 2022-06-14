@@ -1,0 +1,21 @@
+@import "../styles/variables";
+
+.border {
+  /* Doesn't work at all in IE */
+
+  border: 25px solid white;
+  border-image: url(../resources/box.svg) 10% stretch;
+
+  //   height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+
+  //   background: $bg_color;
+}
+
+.tt {
+  background: #aea;
+  height: 24px;
+  width: 24px;
+}
