@@ -6,7 +6,7 @@ const Dropdown = (props) => {
   return (
     <ul className={`dropdown_content ${dropdown ? "show" : ""}`}>
       {submenus.map((submenu, index) => (
-        <li key={index} className="dropdown_list">
+        <li key={index} className="dropdown_item">
           <a href="/#">
             <span href="/#">{submenu.title}</span>
             <span href="/#">{submenu.mnemonic}</span>

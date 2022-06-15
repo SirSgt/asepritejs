@@ -24,13 +24,13 @@ const MenuItems = (props) => {
   }, [dropdown]);
 
   return (
-    <li className="menu_item" ref={ref}>
+    <li className="menu_items" ref={ref}>
       {items.submenu ? (
         <>
           <button
             type="button"
             aria-haspopup="menu"
-            className={`dropdown_btn ${dropdown ? "clicked" : ""}`}
+            className={`menu_item ${dropdown ? "clicked" : ""}`}
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown((prev) => !prev)}
           >
@@ -39,7 +39,7 @@ const MenuItems = (props) => {
           <Dropdown submenus={items.submenu} dropdown={dropdown} />
         </>
       ) : (
-        <button type="button" className="dropdown_btn">
+        <button type="button" className="menu_item">
           {items.title}
         </button>
       )}
