@@ -6,7 +6,6 @@
 
   .tags {
     height: 1.4375rem;
-    // background-color: pink;
     // line-height: 1;
   }
 }
@@ -46,46 +45,59 @@
 
       .clicked {
         background: $toolbar_color;
+        color: $white;
         &:hover {
           background: $toolbar_color;
         }
       }
-    }
 
-    .dropdown_content {
-      @include box_shadow;
+      // &:hover .dropdown_content {
+      //   display: block;
+      // }
 
-      display: none;
-      position: absolute;
-      min-width: 20rem;
+      .dropdown_content {
+        @include box_shadow;
 
-      z-index: 1;
-      padding: 0.375rem;
-      list-style: none;
+        display: none;
+        position: absolute;
+        min-width: 20rem;
 
-      .dropdown_item {
-        a {
-          &:link,
-          &:visited {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-size: 0.6rem;
+        z-index: 1;
+        padding: 0.375rem;
+        list-style: none;
 
-            display: flex;
-            justify-content: space-between;
+        .dropdown_item {
+          display: flex;
+          flex-direction: column;
+
+          a {
+            &:link,
+            &:visited {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              font-size: 0.6rem;
+
+              display: flex;
+              justify-content: space-between;
+            }
+
+            &:hover {
+              background-color: $toolbar_color;
+            }
           }
 
-          &:hover {
-            background-color: $toolbar_color;
+          .divider {
+            margin: 0.25rem 0;
+            border-top: 2px dashed $brown;
           }
         }
       }
-    }
 
-    .show {
-      display: block;
+      .show {
+        display: block;
+      }
     }
   }
 }

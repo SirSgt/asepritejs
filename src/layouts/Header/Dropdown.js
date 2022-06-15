@@ -8,8 +8,8 @@ const Dropdown = (props) => {
       {submenus.map((submenu, index) => (
         <li key={index} className="dropdown_item">
           <a href="/#">
-            <span href="/#">{submenu.title}</span>
-            <span href="/#">{submenu.mnemonic}</span>
+            <span>{submenu.title}</span>
+            <span>{submenu.mnemonic}</span>
           </a>
         </li>
       ))}
